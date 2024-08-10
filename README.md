@@ -7,18 +7,21 @@
 
 ## Authors
     - aouchcha
-    - maynaou
-    - yakhaldy
 ## Usage
     to start the server you need to run the bash command 
 ```bash
         'go run main.go'
 ```
-
     and then fire the browser on http://localhost on port 8080
 ```
-        'http://localhost:8080'
+        'http://localhost:8082'
 ```
+    to run the dockerfile you need to build the image and after that run the container
+```bash
+        'docker build -t <image name> .'
+        'docker container run -d -p <8082:8082> --name <container name> <image name>'
+```
+
 ## Implementation details
     - the projects code is devided into the 'main', 'fs', 'functions', 'statics' and 'syles'  folders. 
     - the package 'functions' contains the 'handlers' for the server,
